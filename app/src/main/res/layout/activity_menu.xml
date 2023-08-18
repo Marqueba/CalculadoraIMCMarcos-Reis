@@ -22,4 +22,11 @@
         android:layout_height="wrap_content"
         android:text="@string/tmb" />
 
+    <Button
+        android:id="@+id/botao_get"
+        style="@style/botao_fresco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GET" />
+
 </LinearLayout>

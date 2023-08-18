@@ -16,6 +16,9 @@
             android:name=".TMBActivity"
             android:exported="false" />
         <activity
+            android:name=".GETActivity"
+            android:exported="false" />
+        <activity
             android:name=".MenuActivity"
             android:exported="true">
             <intent-filter>

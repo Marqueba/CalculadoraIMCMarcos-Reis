@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <ImageButton
-        android:id="@+id/botao_voltar"
+        android:id="@+id/ButtonBack"
         android:contentDescription="@string/voltar"
         style="@style/botoes_do_titulo"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,13 +19,13 @@
         android:id="@+id/titulo"
         style="@style/titulo_colorido"
         android:text="@string/calculadora_imc"
-        app:layout_constraintBottom_toBottomOf="@+id/botao_voltar"
-        app:layout_constraintEnd_toStartOf="@+id/botao_info"
-        app:layout_constraintStart_toEndOf="@+id/botao_voltar"
-        app:layout_constraintTop_toTopOf="@+id/botao_voltar" />
+        app:layout_constraintBottom_toBottomOf="@+id/ButtonBack"
+        app:layout_constraintEnd_toStartOf="@+id/InfoButton"
+        app:layout_constraintStart_toEndOf="@+id/ButtonBack"
+        app:layout_constraintTop_toTopOf="@+id/ButtonBack" />
 
     <ImageButton
-        android:id="@+id/botao_info"
+        android:id="@+id/InfoButton"
         style="@style/botoes_do_titulo"
         android:src="@drawable/baseline_info_24"
         app:layout_constraintTop_toTopOf="parent"

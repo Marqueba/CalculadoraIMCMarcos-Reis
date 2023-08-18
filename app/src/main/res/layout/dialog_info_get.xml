@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/textView7"
+        style="@style/titulo_colorido"
+        android:text="O que é o GET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="GET é a sigla para Gasto Energético Total, que representa a quantidade de energia que o organismo gasta em um dia. O cálculo do GET é feito multiplicando o Gasto Energético Basal (GEB) pelo fator atividade, que varia de acordo com o nível de atividade física de cada pessoa\n\n. A importância do cálculo do GET está em sua capacidade de determinar as necessidades calóricas de cada indivíduo, de acordo com seus objetivos, como manter, perder ou ganhar peso. O GET também ajuda a planejar uma alimentação saudável e equilibrada, que forneça os nutrientes essenciais para o bom funcionamento do organismo."
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Voltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+</androidx.constraintlayout.widget.ConstraintLayout>

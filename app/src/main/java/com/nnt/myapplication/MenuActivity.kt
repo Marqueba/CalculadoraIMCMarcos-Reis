@@ -23,5 +23,10 @@ class MenuActivity : AppCompatActivity() {
             val intent = Intent(this, TMBActivity::class.java)
             startActivity(intent)
         }
+
+        binding.botaoGet.setOnClickListener {
+            val intent = Intent(this, GETActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

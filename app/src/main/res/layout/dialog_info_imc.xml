@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/textView7"
+        style="@style/titulo_colorido"
+        android:text="O que é o IMC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="IMC é a sigla para Índice de Massa Corporal, um parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa. O índice é calculado dividindo o peso do paciente (em kg) pela sua altura ao quadrado (em m). A importância do cálculo do IMC está em sua capacidade de identificar problemas como desnutrição ou obesidade em idosos, adultos ou jovens. \n\nEsse índice, que se trata apenas de uma referência, analisa e identifica se o seu peso se encontra acima ou abaixo do que é considerado adequado. Além disso, graças ao cálculo do IMC, descobrimos qual deve ser o nosso peso ideal em relação a nossa altura, de maneira com que a gente alcance a melhor forma para o nosso corpo."
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Voltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+</androidx.constraintlayout.widget.ConstraintLayout>
