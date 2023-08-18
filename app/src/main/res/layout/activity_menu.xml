@@ -8,23 +8,25 @@
     android:gravity="center"
     tools:context=".MenuActivity">
 
+    <TextView
+        android:id="@+id/textView"
+        style="@style/titulo_colorido"
+        android:text="Medidores de Saúde " />
+
     <Button
         android:id="@+id/botao_imc"
-        style="@style/botao_fresco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/imc" />
 
     <Button
         android:id="@+id/botao_tmb"
-        style="@style/botao_fresco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tmb" />
 
     <Button
         android:id="@+id/botao_get"
-        style="@style/botao_fresco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="GET" />
