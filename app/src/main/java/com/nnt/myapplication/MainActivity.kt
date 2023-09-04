@@ -9,6 +9,9 @@ import androidx.appcompat.app.AlertDialog
 import com.nnt.myapplication.databinding.ActivityMainBinding
 import com.nnt.myapplication.databinding.DialogInfoImcBinding
 import com.nnt.myapplication.databinding.DialogInfoTmbBinding
+import com.nnt.myapplication.databinding.DialogTmbBinding
+import com.nnt.myapplication.model.Calculo
+import java.text.DecimalFormat
 
 class MainActivity : AppCompatActivity() {
 
@@ -46,6 +49,15 @@ class MainActivity : AppCompatActivity() {
             //binding.textViewTeste.text = "peso: $peso\naltura: $altura\nimc: $imc"
 
             startActivity(intent)
+            Thread{    val app = application as App
+                val dao = app.db.calculoDao()
+
+                dao.inserir(Calculo(tipo = "imc", resultado = imc))
+
+                runOnUiThread{
+                    Toast.makeText(this, "Medição salva com sucesso!", Toast.LENGTH_LONG).show()
+                }
+            }.start()
         }
     }
 
